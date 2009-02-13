@@ -148,7 +148,7 @@ myWorksSrucher.onload = function name(works) {
           use:
           ${ wrkSrtct.used_tecnolges.map(function(tec){
             return `<li>${tec}</li>`;
-          }).join('') };
+          }).join('') }
         </ul>
         <span class="proj_Date">complrted at: ${wrkSrtct.W_time}</span>
         <a class="proj_link" href="${wrkSrtct.W_link}">view project</a>
@@ -160,27 +160,6 @@ myWorksSrucher.onload = function name(works) {
 };
 myWorksSrucher.send();
 
-//- all about Works section.
-$(function() {	'use strict'; 
-
-  var pro_img_box  = $('.works .main_worj_gull .gull_box img'),
-      pro_box = $('.works .main_worj_gull .gull_box'),
-      pro_pop_box = $(".works .mainPOPsection"),
-      pro_clos_but = $(".works .mainPOPsection .close_pop"),
-      pro_link = $(".works .mainPOPsection .proj_link")
-
-  $('.works .main_worj_gull .gull_box img').click(function() {
-    $(this).next('.mainPOPsection').fadeIn();
-  })
-  $(".works .mainPOPsection .proj_link").click(function() {
-    $('.works .main_worj_gull .gull_box').children('.mainPOPsection').fadeOut();
-  })
-
-  pro_clos_but.click(function(){
-	  pro_box.children('.mainPOPsection').fadeOut();
-  }) 
-
-})
 
 // her is about navgation sliding
 //===============================
@@ -359,3 +338,24 @@ $(function() {	'use strict';
 
 });
 
+//- all about Works section.
+$(function() {	'use strict'; 
+
+  var pro_img_box  = $('.works .main_worj_gull .gull_box img'),
+      pro_box = $('.works .main_worj_gull .gull_box'),
+      pro_pop_box = $(".works .mainPOPsection"),
+      pro_clos_but = $(".works .mainPOPsection .close_pop"),
+      pro_link = $(".works .mainPOPsection .proj_link")
+
+  $('.works .main_worj_gull .gull_box img').click(function() {
+    $(this).next('.mainPOPsection').fadeIn();
+  })
+  $(".works .mainPOPsection .proj_link").click(function() {
+    $('.works .main_worj_gull .gull_box').children('.mainPOPsection').fadeOut();
+  })
+
+  pro_clos_but.click(function(){
+	  pro_box.children('.mainPOPsection').fadeOut();
+  }) 
+
+})
