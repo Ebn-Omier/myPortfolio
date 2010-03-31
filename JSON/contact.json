@@ -1,11 +1,11 @@
 [
   {
-    "soc_name":"facebook",
+    "soc_name":"Facebook",
     "soc_icon":"fa fa-facebook",
     "coc_link":"https://www.facebook.com/taw.saab"
   },
   {
-    "soc_name":"twitter",
+    "soc_name":"Twitter",
     "soc_icon":"fa fa-twitter",
     "coc_link":"https://mobile.twitter.com/EbnOmair"
   },
@@ -19,7 +19,7 @@
     "soc_icon":"fa fa-linkedin",
     "coc_link":"https://www.linkedin.com/in/musaab-ebn-omeir-abd-alla-9373b51a4"
   },  {
-    "soc_name":"Github",
+    "soc_name":"GitHub",
     "soc_icon":"fa fa-github",
     "coc_link":"https://github.com/Ebn-Omier"
   }

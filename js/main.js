@@ -12,6 +12,20 @@ myRecust.onload = function name() {
   //-
   document.getElementById("main_About").innerHTML = myData.aboutMe ;
 
+  //- hallo messeg ajustment.
+  var myText = myData.typWritMesseg, i =	0 ;
+
+  // type writer sffect.
+  (function writing() { 'use strict';
+    var typRit = setInterval(function (){
+      document.getElementById("typwrite").textContent += myText[i];
+        i = i + 1 ;
+        if ( i > myText.length - 1 ) {
+          clearInterval(typRit);
+        };
+      }, 100);
+  }()); //__
+
   //- About
   //===============
   document.getElementById("about_ding").innerHTML = myData.whatImDoing.map(function (jap) {
@@ -272,25 +286,6 @@ $(function() {  'use strict';
     }
 
   });
-
-  //- hallo messeg ajustment.
-  var myText =
-    "Hallo welcom into my psge this is my only page and her you can fine everything you need",
-    i 			=	0,
-    divHiddn 	=	$("#typwrite");
-  
-  // type writer sffect.
-  (function writing() {
-    'use strict';
-    
-    var typRit = setInterval(function (){
-        document.getElementById("typwrite").textContent += myText[i];
-        i = i + 1;
-        if (i > myText.length - 1) {
-          clearInterval(typRit);
-        };
-      }, 100);
-  }()); //__
 
 });
 $(window).on('load', function() {

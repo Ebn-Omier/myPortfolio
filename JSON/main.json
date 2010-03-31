@@ -3,7 +3,7 @@
     "myName": "Musaab Ebn Omaier Abd Alla",
     "myNakeName": "Ebn Omaier",
     "myAge": 28, 
-    "aboutMe":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis delectus id quos itaque! Beatae autem non, laborum nostrum ducimus expedita voluptatibus? Quidem non velit, deleniti incidunt nemo odio exercitationem.",
+    "aboutMe":"",
     "myEmails":[
       "saab.musaab@gmail.com",
       "Taw.saab@gmail.com"
@@ -27,7 +27,7 @@
       },    
       {
         "jop":"App Desinger",
-        "dist":"make professional designs for all programs and mobile Applications, with (UX /ta UI) Standars"
+        "dist":"make professional designs for all programs and mobile Applications, with (UX/UI) Standars"
       }
     ],
     "education": 
