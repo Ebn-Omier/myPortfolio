@@ -1,0 +1,245 @@
+<! DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>my site</title>
+    <!-- css links pathes.-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body class="fixetBG laoding">
+    <!-- scroll to top-->
+    <div class="scrollToTop" id="scrollToTop"></div>
+    <!-- loder section-->
+    <div class="saab_loder" id="loderDiv"></div>
+    <!-- start navgaition -->
+    <div class="saab_navgaition">
+      <div class="contaner">
+        <div class="logo"><h3><span>E</span>bn_<span>O</span>maier</h3></div><i class="fa fa-navicon" id="open_mianMenu"></i>
+        <div class="saab_navLinksMenu"><i class="fa fa-close" id="clos_mianMenu"></i>
+          <ul>
+            <li class="active" data-value="About">About</li>
+            <li data-value="Education">Education</li>
+            <li data-value="Skils">Skils</li>
+            <li data-value="Experience">Experience</li>
+            <li data-value="Works">Works</li>
+            <li data-value="Testimonial">Testimonial</li>
+            <li data-value="Contant">Contant</li>
+            <div class="clearFix"></div>
+          </ul>
+        </div>
+        <div class="clearFix"></div>
+      </div>
+    </div>
+    <!-- End navgaition -->
+    <div class="hallo_messeg" id="main_Typwrite">
+      <div class="contaner">
+        <p id="typwrite">
+          <!-- the content comes from URL = 'JSON/main.json'-->
+        </p>
+      </div>
+    </div>
+    <!-- Start The Header-->
+    <div class="header contaner" id="About">
+      <div class="mein_img_box"><img src="img/me.jpg"/></div>
+      <div class="main_setels_box"><span class="small_titls" id="About_Name"> 
+          <!-- the content comes from URL = 'JSON/main.json'--></span>
+        <p id="main_About">
+          <!-- the content comes from URL = 'JSON/main.json'-->
+        </p>
+      </div>
+      <div class="clearFix"></div>
+    </div>
+    <!-- End The Header-->
+    <!-- Start the main graber -->
+    <div class="graber contaner">
+      <!-- Start about-->
+      <div class="about"><span class="underline_title">Who I'm &amp; What I'm doing</span>
+        <div class="main_about_box" id="about_ding"></div>
+      </div>
+      <!-- End the about-->
+      <!-- Start The Education-->
+      <div class="education" id="Education"><span class="underline_title">My Education</span>
+        <div class="main_educ_boxes" id="main_educ_boxes"></div>
+      </div>
+      <!-- End The Education-->
+      <!-- Start my skilds-->
+      <div class="my_skils" id="mySkils"><span class="underline_title">My Skils</span>
+        <div class="langueg_skils halfWidth">
+          <!-- languge secetion. --><span class="small_uderlinr_title">Langueg Skils</span>
+          <table class="skils_table" id="mainLangBox"></table>
+        </div>
+        <div class="prigramming_skils halfWidth"><span class="small_uderlinr_title">Programming Skils</span>
+          <div class="main_skils_box">
+            <div class="skil_box" id="mainProgBox">
+              <!-- 
+              - The Main Skil Sections Structher.
+              - the content comes from URL = 'JSON/Skils.json'
+              -->
+            </div>
+          </div>
+        </div>
+        <div class="clearFix"></div>
+      </div>
+      <!-- End my skilds-->
+      <!-- Start Experience-->
+      <div class="Experience" id="Experience"><span class="underline_title">My Experience</span>
+        <div class="main_expir" id="mainEcxper">
+          <!-- - the content comes from URL = 'JSON/experience.json'.-->
+        </div>
+      </div>
+      <!-- End Experience-->
+      <!-- Start works-->
+      <div class="works" id="Works"><span class="underline_title">My Works</span>
+        <p>her rs some of my works, clike and veiw it</p>
+        <div class="main_worj_gull" id="workMainGullBox">
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-1.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-1.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-2.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-2.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"> <img class="main_pro_img" src="img/works/work-3.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-3.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-4.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-4.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-5.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-5.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-6.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-6.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-7.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-7.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="gull_box"><img class="main_pro_img" src="img/works/work-8.jpg" alt=""/>
+            <div class="mainPOPsection">
+              <div class="close_pop">x</div><img src="img/works/work-8.jpg" alt=""/>
+              <div class="disc"> 
+                <h3 class="proj_Name">sie name</h3><span class="proj_Date">20/3/2020</span>
+                <p class="proj_disc_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias culpa fugit necessitatibus voluptatum amet, est praesentium architecto maxime quod ex.</p><a class="proj_link" href="#">view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="clearFix"></div>
+        </div>
+      </div>
+      <!-- End works-->
+      <!-- Start Testimonial-->
+      <div class="Testimonial" id="Testimonial"><span class="underline_title">Testimonial</span>
+        <p>what thy seey about me:</p>
+        <div class="main_test_box">
+          <!-- pearson - 1-->
+          <div class="member_box"><img class="mem_img" src="img/membars/ahmad.jpg" alt=""/>
+            <div class="mim_box">
+              <h3>Mohammad</h3><span class="mam_jop">Engner</span>
+              <p> <i class="fa fa-quote-left"> </i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta  <i class="fa fa-quote-right"></i></p>
+            </div>
+          </div>
+          <div class="member_box"><img class="mem_img" src="img/membars/ahmad.jpg" alt=""/>
+            <div class="mim_box">
+              <h3>Mohammad</h3><span class="mam_jop">Engner</span>
+              <p> <i class="fa fa-quote-left"> </i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta  <i class="fa fa-quote-right"></i></p>
+            </div>
+          </div>
+          <div class="member_box"><img class="mem_img" src="img/membars/ahmad.jpg" alt=""/>
+            <div class="mim_box">
+              <h3>Mohammad</h3><span class="mam_jop">Engner</span>
+              <p> <i class="fa fa-quote-left"> </i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta  <i class="fa fa-quote-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="T_buttons">
+          <button class="left"><i class="fa fa-angle-left"></i></button>
+          <button class="right"><i class="fa fa-angle-right"></i></button>
+        </div>
+      </div>
+      <!-- End Testimonial-->
+      <!-- Start contact -->
+      <div class="contact" id="Contant">
+        <div class="main_cont_box">
+          <div class="cont_adress halfWidth" id="cont_adress">
+            <div class="ad_box"><i class="fa fa-phone"></i>
+              <div id="Phons_Numbers"></div>
+            </div>
+            <div class="ad_box"><i class="fa fa-envelope"></i>
+              <div id="The_Emails"></div>
+            </div>
+            <div class="ad_box"><i class="fa fa-map-marker"></i>
+              <div id="The_adress"></div>
+            </div>
+          </div>
+          <div class="cont_inbuts halfWidth"><span class="underline_title">Contact With Me</span>
+            <form action="">
+              <input type="text" name="Name" placeholder="your Name"/>
+              <input type="text" name="Email" placeholder="your E-mail"/>
+              <textarea name="" cols="30" rows="10" placeholder="type your measseg"></textarea>
+              <button>send</button>
+            </form>
+          </div>
+          <div class="clearFix"></div>
+        </div>
+        <div class="sochyal box"><span>Follow Me :</span>
+          <div class="soch_box"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+        </div>
+      </div>
+      <!-- Enad contact -->
+    </div>
+    <!-- End the main graber -->
+    <!-- Start the footer-->
+    <div class="footer"><span>Designed by : Musaab Ebne Omaire</span></div>
+    <!-- End the footer-->
+    <!-- javaScript.-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="js/main-min.js"></script>
+  </body>
+</html>
+<!-- the discription of the site. -->

@@ -1,0 +1,50 @@
+{
+  "lanSKlis": [
+    {
+      "lang_N":"Arabic",
+      "lang_Deg":"native speaker"
+    },
+    {
+      "lang_N":"English",
+      "lang_Deg":"60%"
+    }
+  ],
+
+  "progSkils": [
+    {
+      "prog_N": "HTML",
+      "progDeg" : "90%",
+      "Others": ["HTML5", "convas-API", "pug.js"]
+    },
+    {
+      "prog_N": "CSS",
+      "progDeg" : "100%",
+      "Others": [
+        "CSS3",
+        "media Query",
+        "responsive",
+        "css libaries",
+        "SASS"
+      ]
+    },
+    {
+      "prog_N": "JavaScript",
+      "progDeg" : "60%",
+      "Others": [
+        "DOOM",
+        "BOOM",
+        "JSON",
+        "AJAX",
+        "ES6"
+      ]
+    },
+    {
+      "prog_N": "Photoshop",
+      "progDeg" : "50%"
+    },
+    {
+      "prog_N": "UX - UI",
+      "progDeg" : "80%"
+    }
+  ]
+}

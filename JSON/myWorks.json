@@ -1,0 +1,82 @@
+[
+  {
+    "work_img":"img/works/work-1.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-2.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-3.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-4.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-5.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-6.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-7.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-8.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-9.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  },
+  {
+    "work_img":"img/works/work-10.jpg",
+    "W_name": "site name",
+    "W_time": "20/3/2020",
+    "W_disc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "W_link":"https://github.com/surge-sh/gulp-surge/issues",
+    "used_tecnolges": ["HTML","css","javascript","pug.js","gup.js"]
+  }
+]

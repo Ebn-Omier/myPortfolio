@@ -1,0 +1,30 @@
+[
+  {
+    "employment": "Voluteeref",
+    "emp_pleas": "Red Crescent Socitey",
+    "emp_detils":"Participatrdun some Health awareness Campaigns and got succour courses.",
+    "emp_startDate": "2011",
+    "emp_endDate": "2014"
+  },
+  {
+    "employment": "Supercisor",
+    "emp_pleas": "AlHamdden for Gold mining Company",
+    "emp_detils":"deal with customers, and enter the data in the Company's system, preparing daily reports",
+    "emp_startDate": "1-Des-2016",
+    "emp_endDate": "1-Fab-2017"
+  },
+  {
+    "employment": "Self-Employment",
+    "emp_pleas": "Freelancer",
+    "emp_detils":"Started to work FrontEnd Developer in Freelaner, ",
+    "emp_startDate": "2018",
+    "emp_endDate": "still working"
+  },
+  {
+    "employment": "Data Entry",
+    "emp_pleas": "Dentastic Hospital",
+    "emp_detils":"deal with customers, and enter the data in the Hospital's system.",
+    "emp_startDate": "Mar-2020",
+    "emp_endDate": "still working"
+  }
+]

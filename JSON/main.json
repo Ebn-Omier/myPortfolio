@@ -1,0 +1,58 @@
+
+  {
+    "myName": "Musaab Ebn Omaier Abd Alla",
+    "myNakeName": "Ebn Omaier",
+    "myAge": 28, 
+    "aboutMe":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis delectus id quos itaque! Beatae autem non, laborum nostrum ducimus expedita voluptatibus? Quidem non velit, deleniti incidunt nemo odio exercitationem.",
+    "myEmails":[
+      "saab.musaab@gmail.com",
+      "Taw.saab@gmail.com"
+    ],
+    "myPhons":[
+      "+249927794966", 
+      "+249126447226"
+    ],
+    "myAdress": "Kartom / Sudan / Omdorman / AlWade street / Home(106)",
+    "typWritMesseg":"Wellcome to my Personal Site, I Hope you find everything you looking for.",
+
+    "whatImDoing" :
+    [
+      {
+        "jop":"Desinger",
+        "dist":"I can make the best designs for you with the best quality and responsive to all device "
+      },
+      {
+        "jop":"FronEnd Developer",
+        "dist":"Writing a clean code without errors, with the best programming tools."
+      },    
+      {
+        "jop":"App Desinger",
+        "dist":"make professional designs for all programs and mobile Applications, with (UX /ta UI) Standars"
+      }
+    ],
+    "education": 
+    [
+      {
+        "college_name":"Alahleya University",
+        "department":"media and public relationsheps",
+        "stareTime":"2010",
+        "EndTime": "2014"
+      },
+      {
+        "college_name":"English Center (ECC)",
+        "department":"English language",
+        "stareTime":"2016",
+        "EndTime": "2018"
+      },
+      {
+        "college_name":"ALahfad University (AUW)",
+        "department":"Training and Workshop on (Human Rights Culture) ",
+        "stareTime":"20-Feb-2015"
+      },
+      {
+        "college_name":"Started Self-Education",
+        "department":"FrontEnd and web Development, I,have learned many things online from several contents",
+        "stareTime":"20-May-2017"
+      }
+    ]
+  }
