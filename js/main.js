@@ -127,38 +127,38 @@ my_Skils.onload = function name(skilsData) {
 };
 my_Skils.send();
 
-var myWorksSrucher= new XMLHttpRequest();
+// var myWorksSrucher= new XMLHttpRequest();
   
-myWorksSrucher.open('GET', 'JSON/myWorks.json');
+// myWorksSrucher.open('GET', 'JSON/myWorks.json');
 
-myWorksSrucher.onload = function name(works) {
-  var works = JSON.parse(myWorksSrucher.responseText);
+// myWorksSrucher.onload = function name(works) {
+//   var works = JSON.parse(myWorksSrucher.responseText);
   
-  document.getElementById("workMainGullBox").innerHTML = works.map(function(wrkSrtct) {
-    return `
-  <div class="gull_box">
-    <img class="main_pro_img" src="${wrkSrtct.work_img}" alt=""/>
-    <div class="mainPOPsection">
-      <div class="close_pop"> x </div>
-      <img src="${wrkSrtct.work_img}" alt=""/>
-      <div class="disc"> 
-        <h3 class="proj_Name">${wrkSrtct.W_name}</h3>
-        <p class="proj_disc_text">${wrkSrtct.W_disc}sit</p>
-        <ul>
-          use:
-          ${ wrkSrtct.used_tecnolges.map(function(tec){
-            return `<li>${tec}</li>`;
-          }).join('') }
-        </ul>
-        <span class="proj_Date">complrted at: ${wrkSrtct.W_time}</span>
-        <a class="proj_link" href="${wrkSrtct.W_link}">view project</a>
-      </div>
-    </div>
-  </div>
-    `
-  }).join("") + `<div class="clearFix"></div>`
-};
-myWorksSrucher.send();
+//   document.getElementById("workMainGullBox").innerHTML = works.map(function(wrkSrtct) {
+//     return `
+//   <div class="gull_box">
+//     <img class="main_pro_img" src="${wrkSrtct.work_img}" alt=""/>
+//     <div class="mainPOPsection">
+//       <div class="close_pop"> x </div>
+//       <img src="${wrkSrtct.work_img}" alt=""/>
+//       <div class="disc"> 
+//         <h3 class="proj_Name">${wrkSrtct.W_name}</h3>
+//         <p class="proj_disc_text">${wrkSrtct.W_disc}sit</p>
+//         <ul>
+//           use:
+//           ${ wrkSrtct.used_tecnolges.map(function(tec){
+//             return `<li>${tec}</li>`;
+//           }).join('') }
+//         </ul>
+//         <span class="proj_Date">complrted at: ${wrkSrtct.W_time}</span>
+//         <a class="proj_link" href="${wrkSrtct.W_link}">view project</a>
+//       </div>
+//     </div>
+//   </div>
+//     `
+//   }).join("") + `<div class="clearFix"></div>`
+// };
+// myWorksSrucher.send();
 
 
 // her is about navgation sliding
