@@ -1,0 +1,38 @@
+[
+  {
+    "clan_name" :"Ahmad Ali",
+    "clan_jop" :"Engener",
+    "clan_img" :"img/membars/ahmad.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  },
+  {
+    "clan_name" :"Fatema Osman",
+    "clan_jop" :"Desinger",
+    "clan_img" :"img/membars/fatema.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  },
+  {
+    "clan_name" :"MR. Mahmode",
+    "clan_jop" :"Master",
+    "clan_img" :"img/membars/jafar.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  },
+  {
+    "clan_name" :"Omneia Kmal",
+    "clan_jop" :"intery Desinger",
+    "clan_img" :"img/membars/omneia.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  },
+  {
+    "clan_name" :"Marya Coper",
+    "clan_jop" :"PHP developer",
+    "clan_img" :"img/membars/marya.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  },
+  {
+    "clan_name" :"Osama Khlefa",
+    "clan_jop" :"bisnes man",
+    "clan_img" :"img/membars/osama.jpg",
+    "clan_messige" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, maiores dicta"
+  }
+]

@@ -1,39 +1,14 @@
-
-var myExperince= new XMLHttpRequest();
-  
-myExperince.open('GET', 'JSON/experience.json');
-
-myExperince.onload = function name(skilsData) {
-  var skilsData = JSON.parse(myExperince.responseText);
-  
-  document.getElementById("mainEcxper").innerHTML = skilsData.map(function(exper) {
-    return `
-  <div class="Ex_box">
-    <div class="poeintOfTheTime">
-      <span>${exper.emp_startDate}</span>
-    </div>
-    <span class="small_titls">${exper.employment}</span>
-    <span class="small_titls">in ( ${exper.emp_pleas} )</span>
-    <span class="starEnd">${exper.emp_startDate} - ${exper.emp_endDate}</span>
-    <span class="Ex_Dic">${exper.emp_detils}</span>
-  </div>
-    `
-  }).join("")
-};
-myExperince.send();
-
 //- Global strucher
 //=====================
 
-var myRecust= new XMLHttpRequest();
-  
+var myRecust= new XMLHttpRequest();  
 myRecust.open('GET', 'JSON/main.json');
-
 myRecust.onload = function name() {
   var myData = JSON.parse(myRecust.responseText);
-  
+
+  //-
   document.getElementById("About_Name").innerHTML = myData.myName ;
-  
+  //-
   document.getElementById("main_About").innerHTML = myData.aboutMe ;
 
   //- About
@@ -71,25 +46,22 @@ myRecust.onload = function name() {
   document.getElementById("Phons_Numbers").innerHTML = myData.myPhons.map(function (mub) {
     return `<span> ${mub} </span>`
   }).join("");
-
+  //-
   document.getElementById("The_Emails").innerHTML = myData.myEmails.map(function (mail) {
     return `<span> ${mail} </span>`
   }).join("");
-
+  //-
   document.getElementById("The_adress").innerHTML = `<span> ${myData.myAdress} </span>` ;
-
- // console.log(myData.myName);
 };
 myRecust.send();
 
-
+//- Skils
+//================
 var my_Skils= new XMLHttpRequest();
-  
 my_Skils.open('GET', 'JSON/Skils.json');
-
 my_Skils.onload = function name(skilsData) {
   var skilsData = JSON.parse(my_Skils.responseText);
-  
+
   document.getElementById("mainLangBox").innerHTML = 
   
   `${skilsData.lanSKlis.map(function(lang) {
@@ -107,6 +79,7 @@ my_Skils.onload = function name(skilsData) {
     }).join('')}`
   };
 
+  //- 
   document.getElementById("mainProgBox").innerHTML = 
   `${skilsData.progSkils.map(function(progeam){
     return `
@@ -122,43 +95,91 @@ my_Skils.onload = function name(skilsData) {
         <div class="clearFix"></div>
       </div>  `
   }).join('') }`;
-
-  
 };
 my_Skils.send();
 
-// var myWorksSrucher= new XMLHttpRequest();
+//- Experince
+//==================
+var myExperince = new XMLHttpRequest();
+myExperince.open('GET', 'JSON/experience.json');
+myExperince.onload = function name(skilsData) {
+  var skilsData = JSON.parse(myExperince.responseText);
   
-// myWorksSrucher.open('GET', 'JSON/myWorks.json');
+  document.getElementById("mainEcxper").innerHTML = skilsData.map(function(exper) {
+    return `
+  <div class="Ex_box">
+    <div class="poeintOfTheTime">
+      <span>${exper.emp_startDate}</span>
+    </div>
+    <span class="small_titls">${exper.employment}</span>
+    <span class="small_titls">in ( ${exper.emp_pleas} )</span>
+    <span class="starEnd">${exper.emp_startDate} - ${exper.emp_endDate}</span>
+    <span class="Ex_Dic">${exper.emp_detils}</span>
+  </div>
+    `
+  }).join("")
+};
+myExperince.send();
 
-// myWorksSrucher.onload = function name(works) {
-//   var works = JSON.parse(myWorksSrucher.responseText);
+//- Works
+//=============
+var myWorksSrucher= new XMLHttpRequest();
+myWorksSrucher.open('GET', 'JSON/myWorks.json');
+myWorksSrucher.onload = function name(works) {
+  var works = JSON.parse(myWorksSrucher.responseText);
   
-//   document.getElementById("workMainGullBox").innerHTML = works.map(function(wrkSrtct) {
-//     return `
-//   <div class="gull_box">
-//     <img class="main_pro_img" src="${wrkSrtct.work_img}" alt=""/>
-//     <div class="mainPOPsection">
-//       <div class="close_pop"> x </div>
-//       <img src="${wrkSrtct.work_img}" alt=""/>
-//       <div class="disc"> 
-//         <h3 class="proj_Name">${wrkSrtct.W_name}</h3>
-//         <p class="proj_disc_text">${wrkSrtct.W_disc}sit</p>
-//         <ul>
-//           use:
-//           ${ wrkSrtct.used_tecnolges.map(function(tec){
-//             return `<li>${tec}</li>`;
-//           }).join('') }
-//         </ul>
-//         <span class="proj_Date">complrted at: ${wrkSrtct.W_time}</span>
-//         <a class="proj_link" href="${wrkSrtct.W_link}">view project</a>
-//       </div>
-//     </div>
-//   </div>
-//     `
-//   }).join("") + `<div class="clearFix"></div>`
-// };
-// myWorksSrucher.send();
+  document.getElementById("workMainGullBox").innerHTML = works.map(function(wrkSrtct) {
+    return `
+  <div class="gull_box">
+    <img class="main_pro_img" src="${wrkSrtct.work_img}" alt=""/>
+    <div class="mainPOPsection">
+      <div class="close_pop"> x </div>
+      <img src="${wrkSrtct.work_img}" alt=""/>
+      <div class="disc"> 
+        <h3 class="proj_Name">${wrkSrtct.W_name}</h3>
+        <p class="proj_disc_text">${wrkSrtct.W_disc}sit</p>
+        <ul>
+          use:
+          ${ wrkSrtct.used_tecnolges.map(function(tec){
+            return `<li>${tec}</li>`;
+          }).join('') }
+        </ul>
+          <a href="${wrkSrtct.W_link}">viow project</a>
+      </div>
+    </div>
+  </div>
+    `
+  }).join("") + `<div class="clearFix"></div>`
+};
+myWorksSrucher.send();
+
+//- Testmonial
+//================
+var tstmonial_struct = new XMLHttpRequest();
+tstmonial_struct.open('GET', 'JSON/testmolnial.json');
+tstmonial_struct.onload = function name(tesmon) {
+  var tesmon = JSON.parse(tstmonial_struct.responseText);
+  
+  document.getElementById('ma_test_box').innerHTML = tesmon.map(function(member) {
+    return `
+    <div class="member_box">
+      <img class="mem_img" src="${member.clan_img}" alt=""/>
+        <div class="mim_box">
+          <h3>${member.clan_name}</h3>
+          <span class="mam_jop">${member.clan_jop}</span>
+          <p>
+            <i class="fa fa-quote-left"></i> 
+              ${member.clan_messige}            
+            <i class="fa fa-quote-right"></i> 
+          </p>
+            </div>
+          </div>
+    `
+  }).join('') ;
+// ${member}
+};
+tstmonial_struct.send();
+
 
 
 // her is about navgation sliding
@@ -186,7 +207,9 @@ $(function() {  'use strict';
     // Hide the items until the page has loaded.
 	$(window).on('load', function() {
 		// Fad Out the loading Div after the page has loaded.
-		window.setTimeout(function() { $("#loderDiv").fadeOut(); }, 100);
+		window.setTimeout(function() { 
+      $("#loderDiv").removeClass('saab_loder')
+    }, 100);
 	});
   
 
