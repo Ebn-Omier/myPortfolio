@@ -221,14 +221,14 @@ $(function() {  'use strict';
     }, 1000 );
   });
 
-  //- the fuction to Hide the green site (loder) on page loding.
-    // Hide the items until the page has loaded.
-	$(window).on('load', function() {
-		// Fad Out the loading Div after the page has loaded.
-		window.setTimeout(function() { 
-      $("#loderDiv").removeClass('saab_loder')
-    }, 100);
-	});
+  // //- the fuction to Hide the green site (loder) on page loding.
+  //   // Hide the items until the page has loaded.
+	// $(window).on('load', function() {
+	// 	// Fad Out the loading Div after the page has loaded.
+	// 	window.setTimeout(function() { 
+  //     $("#loderDiv").removeClass('saab_loder')
+  //   }, 100);
+	// });
   
 
   var min_mienu = $('.saab_navgaition .saab_navLinksMenu'),
