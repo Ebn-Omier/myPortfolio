@@ -1,3 +1,4 @@
+// alert('if there\'s something roung pleas refrish the page and that will be solved')
 //- Global strucher
 //=====================
 
@@ -120,38 +121,6 @@ myExperince.onload = function name(skilsData) {
   }).join("")
 };
 myExperince.send();
-
-//- Works
-//=============
-var myWorksSrucher= new XMLHttpRequest();
-myWorksSrucher.open('GET', 'JSON/myWorks.json');
-myWorksSrucher.onload = function name(works) {
-  var works = JSON.parse(myWorksSrucher.responseText);
-  
-  document.getElementById("workMainGullBox").innerHTML = works.map(function(wrkSrtct) {
-    return `
-  <div class="gull_box">
-    <img class="main_pro_img" src="${wrkSrtct.work_img}" alt=""/>
-    <div class="mainPOPsection">
-      <div class="close_pop"> x </div>
-      <img src="${wrkSrtct.work_img}" alt=""/>
-      <div class="disc"> 
-        <h3 class="proj_Name">${wrkSrtct.W_name}</h3>
-        <p class="proj_disc_text">${wrkSrtct.W_disc}sit</p>
-        <ul>
-          use:
-          ${ wrkSrtct.used_tecnolges.map(function(tec){
-            return `<li>${tec}</li>`;
-          }).join('') }
-        </ul>
-          <a href="${wrkSrtct.W_link}">viow project</a>
-      </div>
-    </div>
-  </div>
-    `
-  }).join("") + `<div class="clearFix"></div>`
-};
-myWorksSrucher.send();
 
 //- Testmonial
 //================
@@ -324,83 +293,62 @@ $(function() {  'use strict';
   }()); //__
 
 });
-
-$(function() {	'use strict';
-  
-  var //- The buttons
-  next_button = $('.Testimonial .T_buttons .right'),
-  prev_button = $('.Testimonial .T_buttons .left');
-
-  var //- The sections.
-  mian_clan_box = $('.Testimonial .main_test_box .member_box'),
-  first_box = $('.Testimonial .main_test_box .member_box:first');
-
-    //- hide the first box
-    first_box.fadeIn();
+$(window).on('load', function() {
+  $(function() {	'use strict';
     
-    //-  add class fadet
-    first_box.addClass("fadet");
-  
-  //_function to check the test box first / last.
-  function checkTest() { 'use strict';
-    
-    //_if the mimbers is first one = fadeOut "nextButton" else = fadeIn "nextButton".
-    if ($('.Testimonial .main_test_box .member_box:first').hasClass("fadet")) {
-      prev_button.fadeOut(0);
-    } else {
-      prev_button.fadeIn(0);
-    };
-    
-    //_if the mimbers is last one = fadeOut "prevtButton" else = fadeIn "prevtButton".
-    if ($('.Testimonial .main_test_box .member_box:last').hasClass("fadet")) {
-      next_button.fadeOut(0);
-    } else {
-      next_button.fadeIn(0);
-    };     
-  }; //_end checkTest.
+    var //- The buttons
+    next_button = $('.Testimonial .T_buttons .right'),
+    prev_button = $('.Testimonial .T_buttons .left');
 
-  //run the checer function.
-  checkTest();
+    var //- The sections.
+    mian_clan_box = $('.Testimonial .main_test_box .member_box'),
+    first_box = $('.Testimonial .main_test_box .member_box:first');
 
-  //_on clikc the button.
-  $('.Testimonial .T_buttons button').click(function() {
-    if ($(this).hasClass("right")){ //_on Clikc next button =
-      //_fadeOut this and fadeIn the next titleBox
-      $(".Testimonial .main_test_box .fadet").fadeOut(200, function() {
-        $(this).removeClass("fadet").next(".member_box").addClass("fadet").fadeIn();
-        checkTest(); //_and run checkTest function.
-      });
-    } else {	//_on Clikc prev button =
+    // mian_clan_box.fadeOut();
+      //- hide the first box
+      first_box.fadeIn();
       
-      //_fadeOut this and fadeIn the prev titleBox
-      $(".Testimonial .main_test_box .fadet").fadeOut(200, function() {
-        $(this).removeClass("fadet").prev(".member_box").addClass("fadet").fadeIn();
-        checkTest(); //_and run checkTest function.
-      });
-    }
-  }); //____End
+      //-  add class fadet
+      first_box.addClass("fadet");
+    
+    //_function to check the test box first / last.
+    function checkTest() { 'use strict';
+      
+      //_if the mimbers is first one = fadeOut "nextButton" else = fadeIn "nextButton".
+      if ($('.Testimonial .main_test_box .member_box:first').hasClass("fadet")) {
+        prev_button.fadeOut(0);
+      } else {
+        prev_button.fadeIn(0);
+      };
+      
+      //_if the mimbers is last one = fadeOut "prevtButton" else = fadeIn "prevtButton".
+      if ($('.Testimonial .main_test_box .member_box:last').hasClass("fadet")) {
+        next_button.fadeOut(0);
+      } else {
+        next_button.fadeIn(0);
+      };     
+    }; //_end checkTest.
 
-});
+    //run the checer function.
+    checkTest();
 
-//- all about Works section.
-$(function() {	'use strict'; 
+    //_on clikc the button.
+    $('.Testimonial .T_buttons button').click(function() {
+      if ($(this).hasClass("right")){ //_on Clikc next button =
+        //_fadeOut this and fadeIn the next titleBox
+        $(".Testimonial .main_test_box .fadet").fadeOut(200, function() {
+          $(this).removeClass("fadet").next(".member_box").addClass("fadet").fadeIn();
+          checkTest(); //_and run checkTest function.
+        });
+      } else {	//_on Clikc prev button =
+        
+        //_fadeOut this and fadeIn the prev titleBox
+        $(".Testimonial .main_test_box .fadet").fadeOut(200, function() {
+          $(this).removeClass("fadet").prev(".member_box").addClass("fadet").fadeIn();
+          checkTest(); //_and run checkTest function.
+        });
+      }
+    }); //____End
 
-  var 
-    pro_img_box  = $('.works .main_worj_gull .gull_box img'),
-    pro_box = $('.works .main_worj_gull .gull_box'),
-    pro_pop_box = $(".works .mainPOPsection"),
-    pro_clos_but = $(".works .mainPOPsection .close_pop"),
-    pro_link = $(".works .mainPOPsection .proj_link");
-
-  $('.works .main_worj_gull .gull_box img').click(function() {
-    $(this).next('.mainPOPsection').fadeIn();
   });
-  $(".works .mainPOPsection .proj_link").click(function() {
-    $('.works .main_worj_gull .gull_box').children('.mainPOPsection').fadeOut();
-  });
-
-  pro_clos_but.click(function(){
-	  pro_box.children('.mainPOPsection').fadeOut();
-  });
-
 });
