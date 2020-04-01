@@ -1,7 +1,26 @@
-{
-  "facebook":["", ""],
-  "twitter":["", ""],
-  "youtube": ["", ""],
-  "instagram": ["", ""],
-  "Linkedin": ["", ""]
-}
+[
+  {
+    "soc_name":"facebook",
+    "soc_icon":"fa fa-facebook",
+    "coc_link":"https://www.facebook.com/taw.saab"
+  },
+  {
+    "soc_name":"twitter",
+    "soc_icon":"fa fa-twitter",
+    "coc_link":"https://mobile.twitter.com/EbnOmair"
+  },
+  {
+    "soc_name":"instagram",
+    "soc_icon":"fa fa-instagram",
+    "coc_link":"https://www.instagram.com/ebn_omier/"
+  },
+  {
+    "soc_name":"Linkedin",
+    "soc_icon":"fa fa-linkedin",
+    "coc_link":"https://www.linkedin.com/in/musaab-ebn-omeir-abd-alla-9373b51a4"
+  },  {
+    "soc_name":"Github",
+    "soc_icon":"fa fa-github",
+    "coc_link":"https://github.com/Ebn-Omier"
+  }
+]

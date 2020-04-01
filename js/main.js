@@ -163,7 +163,6 @@ tstmonial_struct.onload = function name(tesmon) {
   document.getElementById('ma_test_box').innerHTML = tesmon.map(function(member) {
     return `
     <div class="member_box">
-      <img class="mem_img" src="${member.clan_img}" alt=""/>
         <div class="mim_box">
           <h3>${member.clan_name}</h3>
           <span class="mam_jop">${member.clan_jop}</span>
@@ -180,6 +179,25 @@ tstmonial_struct.onload = function name(tesmon) {
 };
 tstmonial_struct.send();
 
+
+//- Contsct / socyaLicons
+//============================
+var socyaLicons = new XMLHttpRequest();
+socyaLicons.open('GET', 'JSON/contact.json');
+socyaLicons.onload = function name(icons) {
+  var icons = JSON.parse(socyaLicons.responseText);
+
+  document.getElementById('mySoc_icons').innerHTML = icons.map(function(socyal) {
+    return `
+    <a href="${socyal.coc_link}">
+      <i class="${socyal.soc_icon}"></i>
+      <span>${socyal.soc_name}</span>
+    </a>
+    `
+  }).join('') + `<div class="clearFix"></div>`
+// ${socyal}
+};
+socyaLicons.send();
 
 
 // her is about navgation sliding
@@ -310,15 +328,17 @@ $(function() {  'use strict';
 $(function() {	'use strict';
   
   var //- The buttons
-    next_button = $('.Testimonial .T_buttons .right'),
-    prev_button = $('.Testimonial .T_buttons .left');
+  next_button = $('.Testimonial .T_buttons .right'),
+  prev_button = $('.Testimonial .T_buttons .left');
 
   var //- The sections.
-    mian_clan_box = $('.Testimonial .main_test_box .member_box'),
-    first_box = $('.Testimonial .main_test_box .member_box:first');
+  mian_clan_box = $('.Testimonial .main_test_box .member_box'),
+  first_box = $('.Testimonial .main_test_box .member_box:first');
 
+    //- hide the first box
     first_box.fadeIn();
-
+    
+    //-  add class fadet
     first_box.addClass("fadet");
   
   //_function to check the test box first / last.
@@ -326,17 +346,17 @@ $(function() {	'use strict';
     
     //_if the mimbers is first one = fadeOut "nextButton" else = fadeIn "nextButton".
     if ($('.Testimonial .main_test_box .member_box:first').hasClass("fadet")) {
-      prev_button.fadeOut(0)
+      prev_button.fadeOut(0);
     } else {
-      prev_button.fadeIn(0)
-    }
+      prev_button.fadeIn(0);
+    };
     
     //_if the mimbers is last one = fadeOut "prevtButton" else = fadeIn "prevtButton".
     if ($('.Testimonial .main_test_box .member_box:last').hasClass("fadet")) {
-      next_button.fadeOut(0)
+      next_button.fadeOut(0);
     } else {
-      next_button.fadeIn(0)
-    }     
+      next_button.fadeIn(0);
+    };     
   }; //_end checkTest.
 
   //run the checer function.
@@ -356,7 +376,8 @@ $(function() {	'use strict';
       $(".Testimonial .main_test_box .fadet").fadeOut(200, function() {
         $(this).removeClass("fadet").prev(".member_box").addClass("fadet").fadeIn();
         checkTest(); //_and run checkTest function.
-      });}
+      });
+    }
   }); //____End
 
 });
@@ -364,21 +385,22 @@ $(function() {	'use strict';
 //- all about Works section.
 $(function() {	'use strict'; 
 
-  var pro_img_box  = $('.works .main_worj_gull .gull_box img'),
-      pro_box = $('.works .main_worj_gull .gull_box'),
-      pro_pop_box = $(".works .mainPOPsection"),
-      pro_clos_but = $(".works .mainPOPsection .close_pop"),
-      pro_link = $(".works .mainPOPsection .proj_link")
+  var 
+    pro_img_box  = $('.works .main_worj_gull .gull_box img'),
+    pro_box = $('.works .main_worj_gull .gull_box'),
+    pro_pop_box = $(".works .mainPOPsection"),
+    pro_clos_but = $(".works .mainPOPsection .close_pop"),
+    pro_link = $(".works .mainPOPsection .proj_link");
 
   $('.works .main_worj_gull .gull_box img').click(function() {
     $(this).next('.mainPOPsection').fadeIn();
-  })
+  });
   $(".works .mainPOPsection .proj_link").click(function() {
     $('.works .main_worj_gull .gull_box').children('.mainPOPsection').fadeOut();
-  })
+  });
 
   pro_clos_but.click(function(){
 	  pro_box.children('.mainPOPsection').fadeOut();
-  }) 
+  });
 
-})
+});
